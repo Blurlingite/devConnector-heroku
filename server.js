@@ -21,7 +21,7 @@ connectDB();
 app.use(express.json({ extended: false }));
 
 // Use routes
-// what this will do is make the endpoint you passed in (the first string) pertain to the '/' in the router.get() in users.js as dictated by the second parameter you passed in here. You don't need to put the ".js" extension on users here
+// what this will do is make the endpoint you passed in (the first string) pertain to the '/' in the router.get() in users.js as dictated by the second parameter you passed in here. You don't need to put the ".js" extension on users here.
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
